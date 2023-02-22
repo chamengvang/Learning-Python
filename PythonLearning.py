@@ -66,3 +66,131 @@ print(course.find('Beginners'))
 print(course.replace('Beginners', 'Abosolute Beginners'))
 print('Python' in course)
 print('python' in course)
+
+# Arithmetic Operations
+print(10 + 10)
+print(10 - 10)
+print(10 * 10)
+print(10 / 10)
+print(10 % 10)
+print(10 ** 2)
+x = 10
+x -= 5
+print(x)
+
+# Operator Precedence 
+x = 10 + 3 * 2
+print(x)
+x = (2 + 3) * 10 - 3
+print(x)
+
+# Math Function 
+x = 2.9
+print(round(x))
+print(abs(-2.9)) #abs() will always return a positive number
+
+import math 
+print(math.ceil(2.9))
+print(math.floor(2.9))
+# https://docs.python.org/3/library/math.html (resource)
+
+# If Statement
+is_hot = False
+is_cold = True
+if is_hot:
+    print("It's a hot day!")
+    print("Drink Plenty of Water.")
+elif is_cold: #(else if)
+    print("It's a cold day.")
+    print("Wear warm clothes.")
+else:
+    print("WHAT A DAY!")
+print("Enjoy your day!")
+
+# Logical Operator 
+has_high_income = True
+has_good_credit = True
+has_criminal_record = False
+
+if has_good_credit and has_high_income:
+    print("Eligible for loan")
+
+if has_good_credit or has_high_income:
+    print("Eligible for loan")
+
+if has_good_credit and not has_criminal_record: #and not changes the condition to true or false
+    print("Eligible for loan")
+
+# Comparison Operator > , < , <= , => , ==
+temperature = 35
+if temperature > 30:
+    print("it's a hot day")
+else:
+    print("it's a cold day")
+
+# While Loops
+i = 1
+while i <= 5:
+    print(i)
+    i = i + 1
+print("Done")
+
+i = 1
+while i <= 5:
+    print('*' * i)
+    i = i + 1
+print("Done")
+
+#Guessing Game Example:
+# secret_number = 9
+# guess_count = 0
+# guess_limit = 3
+# while guess_count < guess_limit:
+#     guess = int(input('Guess: '))
+#     guess_count += 1
+#     if guess == secret_number:
+#         print('You Won!!!')
+#         break #this will help stop the loop
+# else:
+#     print('You A LOSER!!!')
+
+# for Loop
+for character in 'Python':
+    print(character)
+
+for number in range(10):
+    print(number)
+
+prices = [10, 20, 30]
+total = 0
+for price in prices:
+    total += price
+print(f"total: {total} ")
+
+# Nested Loops
+for x in range(3):
+    for y in range(2):
+        print(f'{x},{y}')
+
+numbers = [5,2,5,2,2]
+for number in numbers:
+    output = ''
+    for number in range(number):
+        output += 'x'
+    print(output)
+
+# Lists
+names = ['Josh', 'Bob', 'Mosh']
+print(names[0])
+print(names[1])
+print(names[2])
+print(names[-1])
+print(names[-2])
+print(names[-3])
+
+numbers = [2,4,6,8,10]
+max = numbers[0]
+for number in numbers:
+    if number > max:
+        max = number
+print(max)
