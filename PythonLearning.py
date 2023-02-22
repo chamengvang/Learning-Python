@@ -194,3 +194,55 @@ for number in numbers:
     if number > max:
         max = number
 print(max)
+
+numbers.append(20)
+print(numbers)
+numbers.insert(0,30)
+print(numbers)
+numbers.remove(30)
+# print(numbers)
+# numbers.clear()
+print(numbers)
+numbers.pop()
+print(numbers)
+numbers.sort()
+print(numbers)
+numbers.reverse()
+print(numbers)
+numbers2 = numbers.copy()
+print(numbers2)
+
+# Tuples - A lists but cannot be modify or change, it uses ()
+numbers = (1,2,3)
+numbers.count
+numbers.index
+
+# Unpacking
+coordinates = (1,2,3)
+# x = coordinates[0]
+# y = coordinates[1]
+# z = coordinates[2]
+x, y, z = coordinates # the same as the code above but shorter
+print(f'{x},{y},{z}')
+
+# Dictionaries (objects)
+customer = {
+    "name": "John Smith",
+    "age": 100,
+    "is_verified": True
+}
+print(customer)
+print(customer["name"])
+print(customer.get("NAME"))
+
+# phone = input("phone: ")
+# digits = {
+#     "1": 'One',
+#     "2": 'Two',
+#     "3": 'Three',
+#     "4": 'Four'
+# }
+# output = ""
+# for character in phone:
+#     output += digits.get(character, "!") + " "
+# print(output)
