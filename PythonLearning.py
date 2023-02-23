@@ -286,11 +286,57 @@ def square(number):
 print(square(3))
 
 # Exception - if user enters an invalid anwser, this will help the program not to crash
-try:
-    age = int(input('AGE: '))
-    print(age)
-except ValueError:
-    print('Invalid Value')
+# try:
+#     age = int(input('AGE: '))
+#     print(age)
+# except ValueError:
+#     print('Invalid Value')
 # In certain type of situation, we can add more except error
 
-# Classes 
+# Classes - always use capitalize the first letter of everyword
+class Point:
+    def move(self):
+        print("move")
+    
+    def draw(self):
+        print("draw")
+
+point1 = Point()
+point1.x = 10
+point1.y = 20
+print(point1.x)
+point1.draw()
+
+point2 = Point()
+point2.x = 1
+print(point2.x)
+
+# Inheritance 
+class Mammal:
+    def walk(self):
+        print("walk")
+
+class Dog(Mammal):
+    pass
+# pass statement means to pass this emtpy line because python doesnt like to have an empty class
+
+class Cat(Mammal):
+    def meow(self):
+        print("MEOOOOW!!")
+
+dog1 = Dog()
+dog1.walk()
+cat1 = Cat()
+cat1.meow()
+
+# Modules are similar to components in Javascript, this lets you reuse codes
+# Look at the converter files for example. 
+# import Converter
+# print(Converter.kg_to_lbs(70))
+
+# example if we just want to import a specific function and not the whole module 
+from Converter import kg_to_lbs #press control and space to open what function there is.
+print(kg_to_lbs(100))
+
+# Packaging -  a folder that contains related modules
+# example look at packaging folder
