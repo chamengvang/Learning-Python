@@ -179,7 +179,7 @@ for number in numbers:
         output += 'x'
     print(output)
 
-# Lists
+# Lists (Array)
 names = ['Josh', 'Bob', 'Mosh']
 print(names[0])
 print(names[1])
@@ -246,3 +246,51 @@ print(customer.get("NAME"))
 # for character in phone:
 #     output += digits.get(character, "!") + " "
 # print(output)
+
+# Emoji Converter Example
+# message = input(">")
+# words = message.split(' ')
+# emojis = {
+#     ":)": "😀",
+#     ":(": "🥲",
+# }
+# output = ""
+# for word in words:
+#     output += emojis.get(word, word) + " "
+# print(output)
+
+# Functions 
+# def (define)
+def great_user():
+    print("Hi there!")
+    print("Welcome.")
+
+print("Start")
+great_user()
+print("Finish")
+
+#Parameters & Keywords Arguments
+# Keywords Arguments should always comes after positioning arguments
+def great_user(name):
+    print(f'Hi, {name}')
+
+print("Start")
+great_user("Chameng")
+print("Finish")
+
+# Return Statements 
+# if no return statement, by default python will return None
+def square(number):
+    return number * number
+
+print(square(3))
+
+# Exception - if user enters an invalid anwser, this will help the program not to crash
+try:
+    age = int(input('AGE: '))
+    print(age)
+except ValueError:
+    print('Invalid Value')
+# In certain type of situation, we can add more except error
+
+# Classes 
