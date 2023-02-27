@@ -340,3 +340,32 @@ print(kg_to_lbs(100))
 
 # Packaging -  a folder that contains related modules
 # example look at packaging folder
+
+# Generating Random Values
+# https://docs.python.org/3/py-modindex.html (Resourse)
+
+import random #random is an built-in module
+for i in range(3):
+   print(random.random())
+
+team = ["joe", "Joe2", "Joe3"]
+leader = random.choice(team)
+print(leader)
+
+import random
+class Dice:
+    def roll(self):
+        first = random.randint(1,6)
+        second = random.randint(1,6)
+        return first, second
+
+dice = Dice()
+print(dice.roll())
+
+# Working with Directories
+# https://docs.python.org/3/library/pathlib.html#module-pathlib (resource for pathlib)
+from pathlib import Path
+path = Path("Converter")
+print(path.exists()) # this will see if the path exist or not and return a bolean (True of False)
+#Absolute path - path that starts from the core roots
+#Relative path - path that starts from the current directory 
